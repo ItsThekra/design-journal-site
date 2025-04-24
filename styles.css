@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
 }
-
+/* Header */
 header {
     background-color: #1565d8;
     padding: 20px;
@@ -26,6 +26,11 @@ nav {
     font-weight: bold;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
 .nav-links a {
     color: white;
     margin-left: 20px;
@@ -33,39 +38,112 @@ nav {
     font-size: 1rem;
 }
 
+.get-started {
+    background-color: white;
+    color: #1565d8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Header */
+header {
+    background-color: #1565d8;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.get-started {
+    background-color: white;
+    color: #1565d8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Blog Header */
 .blog-header {
     background-color: #1565d8;
     color: white;
-    padding: 50px 20px;
-    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-column {
+    width: 50%;
+}
+
+.right-column {
+    width: 40%;
+    padding-left: 30px;
 }
 
 .blog-header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .subscribe {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .subscribe input {
-    padding: 10px;
+    padding: 12px;
     margin-right: 10px;
     border: none;
     font-size: 1rem;
+    border-radius: 5px;
+    width: 250px;
 }
 
 .subscribe button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
     background-color: white;
     color: #1565d8;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
+.right-column p {
+    font-size: 1.1rem;
+    color: white;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+/* middel section */
 .blog-posts {
     display: flex;
     flex-wrap: wrap;
@@ -117,18 +195,21 @@ p {
 }
 
 button.category-button {
-    background-color: #1565d8;
-    color: white;
-    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    /* height: 30px;
+    width: 80px; */
+    padding: 5px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 0.9rem;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color:#75757500;
 }
 
-button.category-button:hover {
-    background-color: #0d47a1;
-}
+
+/* footer */
 footer {
     background-color: #1565d8;
     color: white;
