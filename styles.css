@@ -8,7 +8,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
 }
-/* Header */
+
+/* nav bar */
 header {
     background-color: #1565d8;
     padding: 20px;
@@ -115,18 +116,19 @@ nav {
 .subscribe {
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 
 .subscribe input {
     padding: 12px;
-    margin-right: 10px;
     border: none;
     font-size: 1rem;
     border-radius: 5px;
     width: 250px;
+    margin-right: 10px;
 }
 
-.subscribe button {
+.subscribe-button {
     padding: 12px 25px;
     border: none;
     background-color: white;
@@ -143,7 +145,8 @@ nav {
     margin-top: 20px;
 }
 
-/* middel section */
+
+/* Middle section (Cards section) */
 .blog-posts {
     display: flex;
     flex-wrap: wrap;
@@ -154,21 +157,24 @@ nav {
 .post {
     display: flex;
     flex-direction: column;
-    width: 48%;
+    width: 30%;
     margin-bottom: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    height: 100%;
 }
 
 .post img {
     width: 100%;
-    height: auto;
+    height: 200px; 
+    object-fit: cover; 
 }
 
 .post-content {
     padding: 20px;
+    flex-grow: 1; 
 }
 
 .author-date {
@@ -185,6 +191,8 @@ h3 {
 p {
     font-size: 0.95rem;
     margin-bottom: 15px;
+    height: 60px; 
+    overflow: hidden; 
 }
 
 .category-buttons {
@@ -196,17 +204,16 @@ p {
 
 button.category-button {
     color: rgb(0, 0, 0);
-    /* height: 30px;
-    width: 80px; */
-    padding: 5px;
+    padding: 5px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 0.9rem;
     border-radius: 30px;
     border: 1px solid black;
-    background-color:#75757500;
+    background-color: #75757500;
 }
+
 
 
 /* footer */
@@ -214,16 +221,17 @@ footer {
     background-color: #1565d8;
     color: white;
     padding: 40px 20px;
+    font-size: 0.875rem;
 }
 
 .footer-content {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .footer-content p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
 }
 
 .buttons button {
@@ -232,16 +240,72 @@ footer {
     background-color: white;
     color: #1565d8;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #fff;
+    padding-top: 30px;
+}
+
+.footer-logo {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
     font-size: 0.875rem;
+}
+
+.footer-apps {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-apps p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.app-icons img {
+    width: 150px;
+    margin: 0 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .social-links a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.875rem;
 }
+
+footer p {
+    font-size: 0.75rem;
+    margin-top: 20px;
+}
+
